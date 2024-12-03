@@ -1,0 +1,9 @@
+#7B0000 (vermelho)
+#141414 (preto)
+#D4D4D4 (branco)
+#353535 (cor borda)
+
+fonte
+1º NOTO
+
+https://fonts.google.com/noto/specimen/Noto+Sans?query=sans
