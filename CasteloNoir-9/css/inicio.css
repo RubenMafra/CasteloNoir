@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    margin: 0;
+    font-family: "Lato"; 
+    color: #D4D4D4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #141414;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; 
+}
+
+
+nav ul li a {
+    color: #D4D4D4;
+    text-decoration: none;
+}
+
+
+nav ul li .dropdown {
+    display: none; 
+    position: absolute; 
+    background-color: #141414; 
+    padding: 10px 0; 
+    border-radius: 5px; 
+    z-index: 1000; 
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+}
+
+nav ul li .dropdown li {
+    margin: 0; 
+}
+
+nav ul li .dropdown li a {
+    padding: 10px 15px;
+    display: block; 
+    color: #D4D4D4;
+    text-decoration: none; 
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: #7B0000; 
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons a {
+    margin-left: 15px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #D4D4D4;
+    border-radius: 5px;
+}
+
+.auth-buttons .login {
+    background-color: transparent;
+}
+
+.auth-buttons .register {
+    background-color: #7B0000;
+    border-radius: 15px;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../design/banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.body h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.body h1 {
+    font-size: 64px;
+    /*font-weight: 700;*/
+    font-weight: 500;
+    margin: 10px 0;
+    letter-spacing: 18px;
+}
+
+.body p {
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+span {
+    font-size: 25px;
+    font-family: "M PLUS 1p";
+    font-weight: bold;
+} 
