@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/****ABAIXO CSS DAS SESSÕES****/
+
+#uruguai, #nacional {
+    font-family: "M PLUS 1p";
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    height: 100vh;
+    background-color: black;
+} 
+
+#uruguai h1, #nacional h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+    font-family: "Lato";
+    letter-spacing: 3px;
+    position: relative;
+    top: 45px;
+    left: 150px;
+}
+
+#nacional h6 {
+    font-weight: 500;
+    margin: 10px 0;
+    font-family: "Lato";
+    position: relative;
+    top: 110px;
+    left: -40px;
+    letter-spacing: 1px;
+}
+
+#preto {
+    color: #141414;
+    letter-spacing: 8px;
+    font-weight: 900;
+    font-family: "Lato";
+    font-size: 25px;
+}
+
+#portugal {
+    font-family: "M PLUS 1p";
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    height: 100vh;
+    background-color:#7B0000; 
+} 
+
+#portugal h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+    font-family: "Lato";
+    letter-spacing: 3px;
+    position: relative;
+    top: 45px;
+    left: 150px;
+}
+
+#vermelho {
+    color: #7B0000;
+    letter-spacing: 8px;
+    font-weight: 900;
+    font-family: "Lato";
+    font-size: 25px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+                                               /****ABAIXO CSS DO SLIDER E PRODUTOS****/
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+.carrossel-container {
+    position: relative;
+    top: 140px;
+    right: 55px;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.carrossel-container-pt {
+    position: relative;
+    top: 145px;
+    right: 55px;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.carrossel-container-br {
+    position: relative;
+    top: 210px;
+  /*  left: 115px; */
+    right: 280px;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrossel-pt {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carrossel-br {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto {
+    min-width: 100px;
+    margin: 0 10px;
+    text-align: right;
+    position: relative;
+    top: 100px;
+    left: 90;
+
+}
+
+.produto-pt {
+    min-width: 100px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 90;
+}
+
+.produto-br {
+    min-width: 100px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    left: 90;
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.produto-pt img {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.produto-br img {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.produto p {
+    /*text-align: right; */
+    font-size: 16px;
+    color: #d4d4d4;
+}
+
+.produto-pt p {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #d4d4d4;
+}
+
+.produto-br p {
+    font-size: 16px;
+    color: #d4d4d4;
+}
+
+/* Adicionando o formato geométrico invertido */
+.produto::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid #7B0000 ; /* Cor da borda */
+    border-radius: 50% 50% 0 0; /* Forma de arco invertido */
+    z-index: 0;
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    transform: translateY(-10%); /* Ajuste da posição */
+}
+
+.produto-pt::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid #000000 ; /* Cor da borda */
+    border-radius: 50% 50% 0 0; /* Forma de arco invertido */
+    z-index: 0;
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    transform: translateY(-10%); /* Ajuste da posição */
+}
+
+.produto-br::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid #7B0000 ; /* Cor da borda */
+    border-radius: 50% 50% 0 0; /* Forma de arco invertido */
+    z-index: 0;
+    background-color: transparent;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    transform: translateY(-10%); /* Ajuste da posição */
+}
+
+/* Botões de navegação */
+.prev-btn , .next-btn {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    color: white;
+    background-color: transparent;/*rgba(0, 0, 0, 0.5);*/
+    border: transparent; /* 5px solid #7B0000; */
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+  

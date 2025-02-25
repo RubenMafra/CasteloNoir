@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #D4D4D4;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(212, 212, 212, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 774px;
+    height: 613px;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-section p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #D4D4D4;
+    text-align: center;
+}
+
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+legend {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #D4D4D4;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    background-color: #141414;
+    color: #D4D4D4;
+}
+
+input::placeholder {
+    color: #D4D4D4;
+    opacity: 0.8;
+}
+
+button {
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background-color: #7B0000;
+    color: #D4D4D4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6e1414;
+}
